@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Regional - Aires del Salado</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- CSS General -->
+    <link rel="stylesheet" href="../styles.css">
+
+    <!-- CSS Tienda -->
+    <link rel="stylesheet" href="../estilos/tienda.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header class="header">
+
+        <a href="../index.html">
+            <img src="../img/logo.jpg" class="logo" alt="Aires del Salado">
+        </a>
+
+        <nav>
+
+            <ul id="navbar">
+
+                <li><a href="../index.html">Inicio</a></li>
+
+                <li><a href="Tienda.html" class="active">Tienda</a></li>
+
+                <li><a href="Productos.html">Productos Regionales</a></li>
+
+                <li><a href="Contacto.html">Contacto</a></li>
+
+                <li>
+                    <a href="Reservas.html" class="btn-reserva">
+                        Reservar
+                    </a>
+                </li>
+
+                <li>
+                    <a href="carrito.html">
+                        <i class="fa fa-shopping-bag"></i>
+                    </a>
+                </li>
+
+                <a href="#" id="close">
+                    <i class="fa-solid fa-xmark"></i>
+                </a>
+
+            </ul>
+
+        </nav>
+
+        <div id="mobile">
+
+            <a href="carrito.html">
+                <i class="fa fa-shopping-bag"></i>
+            </a>
+
+            <i id="bar" class="fa-solid fa-bars"></i>
+
+        </div>
+
+    </header>
+
+    <!-- ================= CONTENIDO ================= -->
+
+    <main>
+
+        <section class="page-header">
+
+            <h2>Tienda Regional</h2>
+
+            <p>
+                Productos y actividades para disfrutar durante tu estadía.
+            </p>
+
+        </section>
+
+        <section class="section-productos">
+
+            <div class="productos-container">
+
+                <!-- Los productos los carga tienda.js -->
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- ================= MODAL ================= -->
+
+    <div id="overlayModal" class="modal-overlay">
+
+        <div class="modal-custom">
+
+            <button id="btnCerrarModal" class="modal-cerrar">
+                ✕
+            </button>
+
+            <img id="modalImagen" src="" alt="">
+
+            <h5 id="modalTitulo"></h5>
+
+            <p id="modalDescripcion"></p>
+
+            <h4 id="modalPrecio"></h4>
+
+        </div>
+
+    </div>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <p>© 2026 Aires del Salado - General Belgrano</p>
+
+    </footer>
+
+    <!-- ================= JS ================= -->
+
+    <script src="../js/carrito.js"></script>
+    <script src="../js/tienda.js"></script>
+    <script src="../js/menu.js"></script>
+
+</body>
+
+</html>

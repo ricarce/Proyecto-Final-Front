@@ -1,0 +1,328 @@
+/* =========================
+   BODY
+========================= */
+
+body{
+
+    margin: 0;
+    padding: 0;
+
+    font-family: "Montserrat", sans-serif;
+
+    min-height: 100vh;
+
+    background:
+    linear-gradient(
+        135deg,
+        #071428,
+        #0b2545,
+        #13315c
+    );
+
+    /*display: flex;*/
+    justify-content: center;
+    align-items: center;
+
+    padding: 40px 20px;
+}
+
+/* =========================
+   CONTENEDOR
+========================= */
+
+.contacto-contenedor{
+
+    width: 100%;
+    max-width: 1200px;
+
+    padding: 50px;
+
+    border-radius: 30px;
+
+    background: rgba(255,255,255,0.12);
+
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    border: 1px solid rgba(255,255,255,0.15);
+
+    box-shadow:
+    0 8px 32px rgba(0,0,0,0.35);
+
+}
+
+/* =========================
+   TITULO
+========================= */
+
+.contacto-contenedor h1{
+
+    text-align: center;
+
+    color: white;
+
+    font-size: 70px;
+
+    font-weight: 300;
+
+    margin-bottom: 15px;
+
+    letter-spacing: 2px;
+}
+
+/* =========================
+   TEXTO
+========================= */
+
+.contacto-texto{
+
+    text-align: center;
+
+    color: rgba(255,255,255,0.8);
+
+    font-size: 22px;
+
+    margin-bottom: 60px;
+
+    line-height: 1.6;
+}
+
+/* =========================
+   FORMULARIO
+========================= */
+
+.contacto-formulario{
+
+    width: 100%;
+
+    max-width: 550px;
+
+    margin-bottom: 50px;
+}
+
+/* =========================
+   GRUPOS
+========================= */
+
+.contacto-grupo{
+
+    display: flex;
+
+    flex-direction: column;
+
+    margin-bottom: 40px;
+}
+
+/* =========================
+   LABELS
+========================= */
+
+.contacto-grupo label{
+
+    color: white;
+
+    font-size: 28px;
+
+    font-weight: 600;
+
+    margin-bottom: 15px;
+}
+
+/* =========================
+   INPUTS
+========================= */
+
+.contacto-grupo input,
+.contacto-grupo textarea{
+
+    width: 100%;
+
+    padding: 22px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background: rgba(255,255,255,0.95);
+
+    font-size: 18px;
+
+    outline: none;
+
+    transition: 0.3s;
+}
+
+/* =========================
+   EFECTO INPUT
+========================= */
+
+.contacto-grupo input:focus,
+.contacto-grupo textarea:focus{
+
+    transform: scale(1.02);
+
+    box-shadow:
+    0 0 20px rgba(0,140,255,0.5);
+}
+
+/* =========================
+   TEXTAREA
+========================= */
+
+.contacto-grupo textarea{
+
+    min-height: 220px;
+
+    resize: vertical;
+
+    line-height: 1.8;
+}
+
+/* =========================
+   BOTON
+========================= */
+
+.contacto-boton{
+
+    width: 100%;
+
+    padding: 20px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background:
+    linear-gradient(
+        90deg,
+        #4facfe,
+        #0066ff
+    );
+
+    color: white;
+
+    font-size: 22px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+/* =========================
+   HOVER BOTON
+========================= */
+
+.contacto-boton:hover{
+
+    transform: translateY(-4px);
+
+    box-shadow:
+    0 10px 20px rgba(0,102,255,0.4);
+}
+
+/* =========================
+   UBICACION
+========================= */
+
+.ubicacion-titulo{
+
+    text-align: center;
+
+    color: white;
+
+    font-size: 38px;
+
+    margin-top: 30px;
+
+    margin-bottom: 10px;
+}
+
+.ubicacion-texto{
+
+    text-align: center;
+
+    color: rgba(255,255,255,0.75);
+
+    font-size: 18px;
+
+    margin-bottom: 30px;
+}
+
+/* =========================
+   MAPA
+========================= */
+
+.mapa{
+
+    overflow: hidden;
+
+    border-radius: 20px;
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,0.3);
+}
+
+.mapa iframe{
+
+    width: 100%;
+
+    height: 450px;
+
+    border: none;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:768px){
+
+    .contacto-contenedor{
+
+        padding: 30px;
+    }
+
+    .contacto-contenedor h1{
+
+        font-size: 48px;
+    }
+
+    .contacto-texto{
+
+        font-size: 18px;
+    }
+
+    .contacto-grupo label{
+
+        font-size: 22px;
+    }
+
+    .contacto-boton{
+
+        font-size: 18px;
+    }
+
+    .ubicacion-titulo{
+
+        font-size: 28px;
+    }
+}
+.texto-error{
+    color:#dc3545;
+    font-size:14px;
+    margin-top:5px;
+    display:block;
+    min-height:18px;
+}
+
+.contacto-grupo input,
+.contacto-grupo textarea{
+    transition:.3s;
+}
+
+.contacto-grupo.error input,
+.contacto-grupo.error textarea{
+    border:2px solid #dc3545;
+}

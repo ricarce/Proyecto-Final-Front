@@ -1,0 +1,242 @@
+/*====================================
+        RESERVAS.CSS
+=====================================*/
+
+body{
+    background:#f4f7f8;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/*---------------------------
+HEADER
+----------------------------*/
+
+header{
+    width:100%;
+    padding:20px 5%;
+    background:#ffffff;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    box-shadow:0 2px 12px rgba(0,0,0,.12);
+}
+
+header h1{
+    width:100%;
+    text-align:center;
+    margin-top:20px;
+    color:#1b4332;
+    font-size:2rem;
+}
+
+.logo{
+    width:120px;
+}
+
+/*---------------------------
+MENU
+----------------------------*/
+
+#navbar{
+    display:flex;
+    gap:20px;
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+
+#navbar li a{
+    text-decoration:none;
+    color:#333;
+    font-weight:600;
+    transition:.3s;
+}
+
+#navbar li a:hover{
+    color:#198754;
+}
+
+#navbar .active{
+    color:#198754;
+}
+
+/*---------------------------
+CARD
+----------------------------*/
+
+.card{
+    border:none;
+    border-radius:20px;
+    box-shadow:0 8px 25px rgba(0,0,0,.15);
+    margin-bottom:30px;
+}
+
+.card h2,
+.card h3{
+    color:#1b4332;
+    font-weight:bold;
+}
+
+.form-control,
+.form-select{
+    border-radius:12px;
+    padding:10px;
+}
+
+.form-control:focus,
+.form-select:focus{
+    border-color:#198754;
+    box-shadow:0 0 8px rgba(25,135,84,.3);
+}
+
+/*---------------------------
+BOTONES
+----------------------------*/
+
+.btn-success{
+    background:#198754;
+    border:none;
+    border-radius:12px;
+    padding:12px;
+    font-size:18px;
+    transition:.3s;
+}
+
+.btn-success:hover{
+    transform:scale(1.03);
+}
+
+.btn-primary{
+    background:#0d6efd;
+    border:none;
+    border-radius:12px;
+    padding:12px;
+    font-size:18px;
+}
+
+.btn-primary:hover{
+    transform:scale(1.03);
+}
+
+/*---------------------------
+RESUMEN
+----------------------------*/
+
+#noches,
+#subtotal,
+#descuento,
+#total{
+    float:right;
+    font-weight:bold;
+}
+
+#total{
+    color:#198754;
+    font-size:2rem;
+}
+
+/*---------------------------
+FOOTER
+----------------------------*/
+
+footer{
+    margin-top:50px;
+    background:#1b4332;
+    color:#fff;
+    text-align:center;
+    padding:20px;
+}
+
+/*---------------------------
+RESPONSIVE
+----------------------------*/
+
+@media(max-width:992px){
+
+header{
+
+flex-direction:column;
+
+}
+
+header h1{
+
+font-size:1.6rem;
+
+margin-top:15px;
+
+}
+
+#navbar{
+
+flex-wrap:wrap;
+
+justify-content:center;
+
+margin-top:20px;
+
+}
+
+.logo{
+
+margin-bottom:15px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.card{
+
+padding:20px;
+
+}
+
+header h1{
+
+font-size:1.3rem;
+
+}
+
+.btn-success,
+.btn-primary{
+
+font-size:16px;
+
+}
+
+}
+
+@media(max-width:576px){
+
+#navbar{
+
+flex-direction:column;
+
+align-items:center;
+
+gap:12px;
+
+}
+
+.card{
+
+border-radius:12px;
+
+}
+
+header{
+
+padding:15px;
+
+}
+
+header h1{
+
+font-size:1.1rem;
+
+}
+
+}
